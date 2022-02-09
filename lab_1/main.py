@@ -17,7 +17,7 @@ with open('input_parameters.json', 'w') as inputFile:
 def get_user_parameters():
     with open('input_parameters.json') as json_file:
         json_data = json.load(json_file)
-    parameters = {entry: json_data[entry] for entry in json_data.keys}
+    parameters = {entry: json_data[entry] for entry in json_data.keys()}
     return parameters
 
 def gamma_correction():
